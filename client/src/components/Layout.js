@@ -5,7 +5,7 @@ function Layout(props) {
   return (
     <div>
     <Navbar></Navbar>
-    {props.child}
+    {props.children}
     <Footer></Footer>
     </div>
   )
