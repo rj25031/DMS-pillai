@@ -1,12 +1,13 @@
-import React from 'react'
-import './About.css'
+import React from 'react';
+import '../css/About.css';
+import img from '../images/bhik.jpeg';
 
 const About = () => {
   return (
     <React.Fragment>
          <section id="profile">
       <div class="section__pic-container">
-        <img src="bhik.jpeg" 
+        <img src={img}
         
         alt="text"
         />
