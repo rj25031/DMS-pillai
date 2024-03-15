@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import '../../css/login.css';
 import axios from 'axios';
 
-const LoginForm = () => {
+const AgencyLoginForm = () => {
   const [formData, setFormData] = useState({
     email: '',
     password: '',
@@ -88,4 +88,4 @@ const LoginForm = () => {
   );
 };
 
-export default LoginForm;
+export default AgencyLoginForm;

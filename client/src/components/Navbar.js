@@ -7,7 +7,7 @@ const Navbar = () => {
     <header className="container-fluid ">
       <div className="shadow">
       
-        <div className="container p-2">
+        <div className=" p-2">
           <div className="row top-ro">
             <div className="col-lg-3 col-md-12 pt-2">
               {/* <img
@@ -24,7 +24,7 @@ const Navbar = () => {
               </NavLink>
             </div>
             <div className="col-md-9  logiki">
-              <div className="top-row  bg-primary d-none d-lg-flex p-2 rounded-pill row">
+              {/* <div className="top-row  bg-primary d-none d-lg-flex p-2 rounded-pill row">
                 <ul className="text-white ">
                   <li className="float-start p-2">
                     <i className="bi fs-6 bi-geo-alt"></i> 1'st Floor Vplaza,
@@ -37,8 +37,8 @@ const Navbar = () => {
                     <i className="bi s-6 bi-envelope-x"></i> support@dhms.com
                   </li>
                 </ul>
-              </div>
-              <div id="menu" className="nav-row d-none d-lg-flex  row">
+              </div> */}
+              <div id="menu" className="nav-row d-none d-xl-flex row">
                 <ul className="d-inline-block">
                   <li className="float-none float-md-start p-4 px-4">
                     <NavLink to="/">Home</NavLink>
@@ -56,14 +56,11 @@ const Navbar = () => {
                     <NavLink to="/">Contact Us</NavLink>
                   </li>
                   <li className="float-none float-md-start p-4 px-4">
-                    <NavLink to="/register">User Login/Signup</NavLink>
+                    <NavLink to="/login">User Login/Signup</NavLink>
                   </li>
                   <li className="float-none float-md-start p-4 px-4">
-                    <NavLink to="/">Agency Login/Signup</NavLink>
+                    <NavLink to="/agency-login">Agency Login/Signup</NavLink>
                   </li>
-                 
- 
-
                 </ul>
               </div>
             </div>

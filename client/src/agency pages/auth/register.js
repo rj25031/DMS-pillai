@@ -3,13 +3,12 @@ import Navbar from "../../components/Navbar.js";
 import "../../css/register.css";
 import axios from "axios";
 
-const RegistrationForm = () => {
+const AgencyRegistrationForm = () => {
   const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
+    name: "",
     email: "",
     password: "",
-    gender: "",
+    accountType: "", // Changed from gender to accountType
   });
 
   const handleChange = (e) => {
@@ -25,18 +24,16 @@ const RegistrationForm = () => {
     const user = new FormData();
     user.append("Email", formData.email);
     user.append("Password", formData.password);
-    user.append("Fname", formData.firstName);
-    user.append("Lname", formData.lastName);
-    user.append("Gender", formData.gender);
+    user.append("Name", formData.name); // Changed from Fname to Name
+    user.append("AccountType", formData.accountType); // Changed from Gender to AccountType
     const userData = await axios.post("/api/user/register", user);
     console.log(userData.data.message);
     setFormData({
-      firstName: "",
-      lastName: "",
+      name: "",
       email: "",
       password: "",
-      gender: "",
-    })
+      accountType: "", // Reset accountType field
+    });
   };
 
   return (
@@ -51,25 +48,13 @@ const RegistrationForm = () => {
 
         <input
           type="text"
-          name="firstName"
+          name="name" // Changed from firstName to name
           id="fname"
-          placeholder="First Name"
+          placeholder="Name" // Changed from First Name to Name
           className="rounded p-2"
           required
           autoFocus
-          value={formData.firstName}
-          onChange={handleChange}
-        />
-        <br />
-        <input
-          type="text"
-          name="lastName"
-          id="lname"
-          placeholder="Last Name"
-          className="rounded p-2"
-          required
-          autoFocus
-          value={formData.lastName}
+          value={formData.name}
           onChange={handleChange}
         />
         <br />
@@ -84,7 +69,8 @@ const RegistrationForm = () => {
           value={formData.email}
           onChange={handleChange}
         />
-            <span className="card-text">Minimum of 8 characters</span><br />
+        <br />
+
         <input
           type="password"
           name="password"
@@ -95,36 +81,34 @@ const RegistrationForm = () => {
           value={formData.password}
           onChange={handleChange}
         />
-
-        <span className="card-text">Minimum of 8 characters</span>
         <br />
 
         <div className="custom-control custom-radio">
           <input
             type="radio"
-            id="Male"
-            name="gender"
+            id="Government"
+            name="accountType" // Changed from gender to accountType
             className="custom-control-input"
-            value="male"
-            checked={formData.gender === "male"}
+            value="government" // Changed values from male to government
+            checked={formData.accountType === "government"} // Changed from male to government
             onChange={handleChange}
           />
-          <label className="custom-control-label" htmlFor="Male">
-            Male
+          <label className="custom-control-label" htmlFor="Government">
+            Government
           </label>
         </div>
         <div className="custom-control custom-radio">
           <input
             type="radio"
-            id="Female"
-            name="gender"
+            id="Private"
+            name="accountType" 
             className="custom-control-input"
-            value="female"
-            checked={formData.gender === "female"}
+            value="private" 
+            checked={formData.accountType === "private"} 
             onChange={handleChange}
           />
-          <label className="custom-control-label" htmlFor="Female">
-            Female
+          <label className="custom-control-label" htmlFor="Private">
+            Private
           </label>
         </div>
         <br />
@@ -141,4 +125,4 @@ const RegistrationForm = () => {
   );
 };
 
-export default RegistrationForm;
+export default AgencyRegistrationForm;

@@ -9,6 +9,8 @@ import HomePage from "./user pages/HomePage";
 import AboutPage from "./user pages/AboutPage";
 import LoginForm from "./user pages/auth/login";
 import RegistrationForm from "./user pages/auth/register";
+import AgencyLoginForm from "./agency pages/auth/login";
+import AgencyRegistrationForm from "./agency pages/auth/register";
 function App() {
   return (
     <Router>
@@ -17,6 +19,9 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/login" element={<LoginForm />} />
         <Route path="/register" element={<RegistrationForm />} />
+        <Route path="/agency-login" element={<AgencyLoginForm/>}/>
+        <Route path="/agency-register" element={<AgencyRegistrationForm/>}/>
+        <Route path="/about" element={<AboutPage />} />
       </Routes>
     </Router>
   );
