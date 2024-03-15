@@ -22,18 +22,33 @@ function AboutPage() {
     <div className="about-us">
         <div className="container">
             <div className="session-title">
-                <p>Help us to Achieve our Goal</p>
-                <h2>About Our Charity</h2>
+                {/* <p>Help us to Achieve our Goal</p> */}
+                {/* <h2>About Our Charity</h2> */}
             </div>
             <div className="about-row row">
                 <div className="col-md-8">
                     <div className="abut-detail">
-                         <h4>BUILDING SCHOOL IN AFRICAN COMMUNITIES.</h4>
-                        <p>Integer vulputate vehicula dolor a eleifend. Duis aliquam condimentum sapien, eget tempor justo. Aenean porttitor nibh metus, sollicitudin egestas metus posuere et . Fusce egestas volutpat metus, in sodales sem bibendum porta. Nunc hendrerit nunc sit </p> <p> Amet tellus posuere, at malesuada sem gravida. Integer maximus ultricies augue, at dapibus elit bibendum consequat. Cras faucibus tellus eleifend, fermentum purus in, dapibus sapien. Praesent nec ornare risus. Etiam iaculis, ligula vel gravida vestibulum, urna justo posuere ante, id pretium massa arcu sed mi. Nunc a sollicitudin sem. Duis tempus</p>
+                        <h4>Our Commitment</h4>
+                        <p>At SafeHarbor our commitment to saving lives and protecting communities drives everything we do. We understand the importance of preparedness and resilience in the face of disasters, and we are dedicated to providing the tools, resources, and support needed to ensure the safety and well-being of individuals and communities worldwide.</p>
+
+                        <h4>Our Approach</h4>
+                        <p>Our approach to disaster management is rooted in collaboration, innovation, and inclusivity. We believe that effective disaster management requires the collective efforts of governments, organizations, communities, and individuals working together towards a common goal. By fostering partnerships, embracing innovation, and promoting inclusivity, we strive to create a more resilient and prepared world for future generations.</p>
+
+                        <h4>Our Impact</h4>
+                        <p>Since our inception, we have made a tangible impact in communities around the globe. From providing early warning alerts that have saved countless lives to supporting long-term recovery efforts in the aftermath of disasters, our work has touched the lives of millions. We measure our success not only by the number of lives saved but also by the strength and resilience of the communities we serve.</p>
+
+                        <h4>Our Team</h4>
+                        <p>Behind SafeHar is a dedicated team of professionals committed to making a difference. Our team brings together expertise from various fields, including disaster management, technology, public health, and community development. Together, we are united in our mission to build a safer, more resilient world for all.</p>
+
+                        <h4>Our Future</h4>
+                        <p>As we look to the future, we remain steadfast in our commitment to innovation, collaboration, and impact. We will continue to adapt and evolve in response to emerging challenges and opportunities, always striving to push the boundaries of what is possible in disaster management. Together with our partners and stakeholders, we will build a future where disasters no longer have the power to destroy lives and livelihoods, but instead, serve as catalysts for positive change and resilience.</p>
+
+
+
                     </div>
                    
 
-                    <div className="row diag-ro">
+                    {/* <div className="row diag-ro">
                         <div className="about-diag">
                             <div className="icon"><i className="fas fa-arrow-right"></i></div>
                             <div className="tex">
@@ -55,7 +70,7 @@ function AboutPage() {
                                 <p>Our initial target</p>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="col-md-4">
                     <img src="assets/images/about_img.png" alt=""/>
@@ -64,7 +79,7 @@ function AboutPage() {
         </div>
     </div>
       
-      <div id="testimonial" className="service bg-gray container-fluid px-4 py-5">
+    {/* <div id="testimonial" className="service bg-gray container-fluid px-4 py-5">
                 <div className="container">
                     
                
@@ -127,7 +142,7 @@ function AboutPage() {
                 </div>
                  </div>
             </div>
-       
+        */}
     </Layout>
   )
 }

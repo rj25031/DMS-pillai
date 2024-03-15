@@ -31,30 +31,28 @@ function HomePage() {
               data-bs-slide-to="2"
               aria-label="Slide 3"
             ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img
-                src="assets/images/slider/slide-01"
+                src="assets/images/slider/r1.jpg"
                 class="d-block w-100"
                 alt="..."
               />
               <div class="carousel-caption d-none pb-5 mb-5 d-md-block">
-                <h5 class="text-black fw-bold fs-1 bounceInDown">
+                <h5 class="text-white fw-bold fs-1 bounceInDown">
                   {" "}
-                  KEDARNATH, JUNE 2013 <span class="edu-re">FLOOD</span>
+                  Strengthening <span class="edu-re">Disaster</span>  Resilience Together
                 </h5>
+                <h6 class="text-white fw-bold  bounceInDown">Join Us in Making a Difference</h6>
                 <p class=" bounceInLeft mb-4">
-                  The Kedarnath flood, occurring in June 2013, was triggered by
-                  heavy rainfall and subsequent cloudbursts in the Uttarakhand
-                  region of India. The deluge led to flash floods and
-                  landslides, devastating the town of Kedarnath and surrounding
-                  areas. Thousands lost their lives, with extensive damage to
-                  infrastructure and pilgrimage sites. The disaster highlighted
-                  the vulnerability of Himalayan regions to extreme weather
-                  events and underscored the importance of robust disaster
-                  preparedness and mitigation strategies. <br />
-                  JUNE 2013
+                Our comprehensive disaster management system empowers NGOs, agencies, and communities to work together seamlessly in preparing for, responding to, and recovering from disasters. From real-time alerts to collaborative planning tools, together, we can build resilient communities and save lives.
                 </p>
                 <div class="row text-center mt-3 vbh">
                   {/* <!-- <div class="btn mx-auto w-auto  px-5 py-3 btn-primary fs-5  bounceInUp"> Donate Now </div> --> */}
@@ -63,25 +61,56 @@ function HomePage() {
             </div>
             <div class="carousel-item">
               <img
-                src="assets/images/slider/slide-02"
+                src="assets/images/slider/r2.jpeg"
                 class="d-block w-100"
-                alt="..."
+                alt="Unable to Load"
               />
               <div class="carousel-caption d-none pb-5 mb-5 d-md-block">
                 <h5 class="text-white fw-bold fs-1 bounceInDown">
-                  Kerala Aug 2018
+                Empowering Action, Ensuring Safety
                 </h5>
+                <h6 class="text-white fw-bold bounceInDown">Cutting-Edge Tools for Effective Disaster Management</h6>
                 <p class=" bounceInLeft mb-4">
-                  The Kerala flood of August 2018 was a catastrophic event
-                  triggered by heavy monsoon rains, leading to widespread
-                  flooding and landslides across the state of Kerala, India. The
-                  deluge caused immense devastation, claiming hundreds of lives
-                  and displacing millions of residents from their homes. The
-                  disaster prompted massive rescue and relief efforts,
-                  highlighting the importance of preparedness and infrastructure
-                  resilience in mitigating the impacts of natural disasters in
-                  vulnerable regions. <br />
-                  Kerala Aug 2018{" "}
+                  Tour disaster management system offers a suite of comprehensive solutions designed to meet the diverse needs of NGOs, agencies, and communities. From early warning alerts to interactive maps and volunteer coordination, our platform provides everything you need to effectively prepare for, respond to, and recover from disasters
+                </p>
+                <div class="row text-center mt-3 vbh">
+                  {/* <!-- <div class="btn mx-auto w-auto  px-5 py-3 btn-primary fs-5  bounceInUp"> Donate Now </div> --> */}
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/images/slider/r3.jpg"
+                class="d-block w-100"
+                alt="Unable to Load"
+              />
+              <div class="carousel-caption d-none pb-5 mb-5 d-md-block">
+                <h5 class="text-white fw-bold fs-1 bounceInDown">
+                Real Results, Tangible Impact
+                </h5>
+                <h6 class="text-white fw-bold bounceInDown">Stories of Resilience and Hope</h6>
+                <p class=" bounceInLeft mb-4">
+                See how our disaster management system has made a difference in communities around the world. From facilitating swift response efforts during natural disasters to empowering local volunteers and agencies, our platform is helping to build resilience and save lives, one community at a time.
+                </p>
+                <div class="row text-center mt-3 vbh">
+                  {/* <!-- <div class="btn mx-auto w-auto  px-5 py-3 btn-primary fs-5  bounceInUp"> Donate Now </div> --> */}
+                </div>
+              </div>
+            </div>
+            {/* Slide-4 */}
+            <div class="carousel-item">
+              <img
+                src="assets/images/slider/r4.png"
+                class="d-block w-100"
+                alt="Unable to Load"
+              />
+              <div class="carousel-caption d-none pb-5 mb-5 d-md-block">
+                <h5 class="text-white fw-bold fs-1 bounceInDown">
+                Together, We Are Stronger
+                </h5>
+                <h6 class="text-white fw-bold bounceInDown">Get Involved, Make a Difference</h6>
+                <p class=" bounceInLeft mb-4">
+                Your voice matters. Join our community-driven approach to disaster management and become an active participant in building resilience. From volunteering opportunities to educational workshops and collaborative initiatives, there are many ways you can contribute to making your community safer and more prepared.
                 </p>
                 <div class="row text-center mt-3 vbh">
                   {/* <!-- <div class="btn mx-auto w-auto  px-5 py-3 btn-primary fs-5  bounceInUp"> Donate Now </div> --> */}
@@ -115,67 +144,53 @@ function HomePage() {
           <div class="section-title row">
             <h2>What we do?</h2>
             <p>
-              A PLATFORM WHICH HELPS IN DISASTER MANAGEMENT OF THE PLACES
-              AFFECTED BY THE DISASTER. IT IS A SOURCE AVAILABLE FOR NGO’S AS
-              WELL AS INDIVIDUALS.
+            Empowering Preparedness, Ensuring Safety: Building Resilient Communities Together
             </p>
           </div>
           <div class="row mt-4 whd">
             <div class="col-md-4 text-center mb-5">
               {/* <i class="bi text-primary fs-1 bi-egg-fried"></i> */}
 
-              <h4 class="fs-6 fw-bold mt-3">Provide Voleenters </h4>
+              <h4 class="fs-6 fw-bold mt-3">Risk Assessment and Planning</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
-                consectetur adipiscing elit. Sed ac accumsan hic deserunt facere
-                et animi
+              We conduct thorough risk assessments to identify potential hazards and vulnerabilities faced by communities, infrastructure, and critical assets. By analyzing data and collaborating with stakeholders, we develop tailored preparedness plans and strategies to mitigate risks and enhance resilience.
               </p>
             </div>
             <div class="col-md-4 text-center mb-5">
               {/* <i class="bi fs-1 text-primary bi-house-door"></i> */}
-              <h4 class="fs-6 fw-bold mt-3">Review Disasters</h4>
+              <h4 class="fs-6 fw-bold mt-3">Early Warning Systems</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
-                consectetur adipiscing elit. Sed ac accumsan hic deserunt facere
-                et animi
+              Our early warning systems leverage cutting-edge technology and real-time data to provide timely alerts and notifications about impending threats such as natural disasters, severe weather events, and public health emergencies. By empowering individuals and communities with actionable information, we help them make informed decisions and take proactive measures to stay safe.
               </p>
             </div>
             <div class="col-md-4 text-center mb-5">
               {/* <i class="bi fs-1 text-primary bi-book-half"></i> */}
               <h4 class="fs-6 fw-bold mt-3">
-                Provides Exact location of disaster
+              Emergency Response Coordination
               </h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
-                consectetur adipiscing elit. Sed ac accumsan hic deserunt facere
-                et animi
+              In times of crisis, effective coordination and collaboration are essential. We work closely with government agencies, non-profit organizations, and private sector partners to coordinate emergency response efforts, mobilize resources, and ensure a swift and efficient response to disasters and emergencies.
               </p>
             </div>
             <div class="col-md-4 text-center mb-5">
               {/* <i class="bi fs-1 text-primary bi-currency-dollar"></i> */}
-              <h4 class="fs-6 fw-bold mt-3">We Provide Collaboration with NGOS and research sharing </h4>
+              <h4 class="fs-6 fw-bold mt-3">Community Engagement and Education</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur, consectetur adipiscing
-                elit. Sed ac accumsan adipisicing elit. Nulla hic deserunt
-                facere et animi
+              We believe that community engagement and education are key pillars of effective disaster management. Through outreach programs, training workshops, and public awareness campaigns, we empower individuals and communities with the knowledge, skills, and resources they need to prepare for, respond to, and recover from disasters.
               </p>
             </div>
             <div class="col-md-4 text-center mb-5">
               {/* <i class="bi fs-1 text-primary bi-building"></i> */}
-              <h4 class="fs-6 fw-bold mt-3">Quick source of information</h4>
+              <h4 class="fs-6 fw-bold mt-3">Technology and Innovation</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
-                consectetur adipiscing elit. Sed ac accumsan hic deserunt facere
-                et animi
+              We leverage technology and innovation to enhance the efficiency and effectiveness of disaster management efforts. From geographic information systems (GIS) and remote sensing technologies to mobile applications and data analytics, we harness the power of technology to improve situational awareness, decision-making, and communication during emergencies.
               </p>
             </div>
             <div class="col-md-4 text-center mb-5">
               {/* <i class="bi fs-1 text-primary bi-heart-pulse"></i> */}
-              <h4 class="fs-6 fw-bold mt-3">Information of past disaster</h4>
+              <h4 class="fs-6 fw-bold mt-3">Resilience Building and Recovery</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur, consectetur adipiscing
-                elit. Sed ac accumsan adipisicing elit. Nulla hic deserunt
-                facere et animi
+              Our work extends beyond the immediate response phase to support long-term recovery and resilience-building efforts. We collaborate with local stakeholders to develop and implement sustainable solutions for rebuilding infrastructure, restoring livelihoods, and strengthening community resilience in the aftermath of disasters.
               </p>
             </div>
           </div>
@@ -199,16 +214,9 @@ function HomePage() {
                   <span class="rit-info text-right col-6"></span>
                 </div>
                 <div class="caus-detail">
-                  <h4>Cyclone Tauktae struck the western coast of India</h4>
+                  <h4>Hyderabad floods</h4>
                   <p>
-                    In June 2021, Cyclone Tauktae struck the western coast of
-                    India, affecting the state of Gujarat. up to 185 kilometers
-                    per hour (115 mph), the cyclone caused widespread damage to
-                    infrastructure, including homes and power lines. Heavy
-                    rainfall triggered flooding and landslides in several areas.
-                    Despite extensive preparations and evacuation efforts, the
-                    cyclone resulted in casualties and significant disruption to
-                    daily life.
+                  The 2020 Hyderabad floods were a series of floods associated with Deep Depression BOB 02 that caused extensive damage and loss of life as a result of flash flooding in Hyderabad, India in October 2020. Among the most affected areas were Balapur, L. B. Nagar, parts of Old City such as Hafiz Baba Nagar, Al Jubail Colony, Omer colony, Osman Nagar, Nabeel Colony, Falaknuma, Chaderghat etc.The fourth tropical cyclone and third deep depression of the 2020 North Indian Ocean cyclone season, BOB 02 formed on 11 October over the west-central Bay of Bengal and slowly drifted towards the east coast of India over the following three days.
                   </p>
                 </div>
 
@@ -228,17 +236,9 @@ function HomePage() {
                   <span class="rit-info text-right col-6"></span>
                 </div>
                 <div class="caus-detail">
-                  <h4>Jammu and Kashmir July 2021 </h4>
+                  <h4>Kerala floods</h4>
                   <p>
-                    In July 2021, Jammu and Kashmir experienced devastating
-                    cloud bursts, particularly affecting the Kishtwar district.
-                    Heavy rainfall in a short period led to flash floods and
-                    landslides, causing significant damage to infrastructure,
-                    including roads, bridges, and homes. The sudden onset of the
-                    disaster resulted in casualties and displaced many
-                    residents. Rescue and relief operations were promptly
-                    initiated to assist those affected and restore normalcy in
-                    the region{" "}
+                  Severe floods struck Kerala on August 16, 2018, amid record monsoon rains, marking the state's worst flood in nearly a century. With over 483 deaths and 15 missing, about a million people were evacuated from various districts, including Chengannur, Pandanad, and Aluva. All 14 districts were on red alert. Approximately one-sixth of Kerala's population was directly affected. Declared a Level 3 Calamity by the Indian government, it surpassed the 1924 great flood as the most devastating in Kerala's recent history.It is the worst flood in Kerala after the great flood of 99 that took place in 1924.
                   </p>
                 </div>
 
@@ -258,16 +258,9 @@ function HomePage() {
                   <span class="rit-info text-right col-6"></span>
                 </div>
                 <div class="caus-detail">
-                  <h4>FLOOD IN KERALA</h4>
+                  <h4>Gujrat Floods</h4>
                   <p>
-                    The Kerala flood of August 2018 was a catastrophic event
-                    triggered by heavy monsoon rains, leading to widespread
-                    flooding and landslides across the state of Kerala, India.
-                    The deluge caused immense devastation, claiming hundreds of
-                    lives and displacing millions of residents from their homes.
-                    highlighting the importance of preparedness and
-                    infrastructure resilience in mitigating the impacts of
-                    natural disasters in vulnerable regions..
+                  Extremely Severe Cyclonic Storm Tauktae, the strongest storm of the 2021 North Indian Ocean cyclone season, hit Gujarat, India, as the most potent cyclone since 1998. Originating from an Arabian Sea low pressure area on May 13, it intensified into a cyclonic storm named Tauktae by May 14. Gradually strengthening, it reached severe cyclonic storm status on May 15 and very severe cyclonic storm status on May 16. By May 17, it became extremely severe before an eyewall replacement cycle weakened it briefly. Restrengthening near Gujarat, it made landfall, causing significant damage and casualties.
                   </p>
                 </div>
 
@@ -277,6 +270,77 @@ function HomePage() {
               </div>
             </div>
           </div>
+
+          {/* start */}
+          <div class="cuses-row row">
+            <div class="col-md-4">
+              <div class="causen-ccover">
+                <div class="caus-img">
+                  <img src="assets/images/causes/r8.jpeg" alt="" />
+                </div>
+                <div class="caus-info row no-margin">
+                  <span class="left-info col-6"></span>
+                  <span class="rit-info text-right col-6"></span>
+                </div>
+                <div class="caus-detail">
+                  <h4>Burevi Cyclone</h4>
+                  <p>
+                  Cyclonic Storm Burevi was a weak tropical cyclone which made landfall in Sri Lanka, becoming the first to do so since a depression in 2014, and brought minimal impact to Southern India in December 2020. The ninth depression and fifth named storm of the 2020 North Indian Ocean cyclone season, Burevi originated from a low-pressure area which formed on November 28. The depression then was upgraded into Cyclone Burevi the following day. Burevi slowly intensified reaching its peak intensity on December 2, just before making landfall in Sri Lanka. Burevi then weakened, entering the Gulf of Mannar the next day. Burevi proceeded to dissipate after stalling on December 5.
+                  </p>
+                </div>
+
+                <div class="donat-btn">
+                  {/* <!-- <button class="btn-btn-danger"><i class="fas fa-hand-holding-usd"></i> Donate</button> --> */}
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="causen-ccover">
+                <div class="caus-img">
+                <img src="assets/images/causes/r9.jpg" alt=""/>
+                </div>
+                <div class="caus-info row no-margin">
+                  <span class="left-info col-6"></span>
+                  <span class="rit-info text-right col-6"></span>
+                </div>
+                <div class="caus-detail">
+                  <h4>Ludhiana Gas Leak</h4>
+                  <p>
+                  On April 30, 2023, in Ludhiana, Punjab, India, a tragic incident occurred as 11 individuals lost their lives while nine were hospitalized due to a gas leak stemming from a factory. The exact source of the leak remains uncertain, prompting a National Disaster Response Force team and experts to investigate. Punjab Chief Minister Bhagwant Mann attributed the leak to the factory, while The Tribune reported high levels of hydrogen sulfide in the vicinity. There's speculation that the gas may have dispersed from manholes, possibly due to chemical reactions with methane. Ludhiana's Deputy Commissioner, Surabhi Malik, stated that samples are being collected from manholes for further analysis.
+                  </p>
+                </div>
+
+                <div class="donat-btn">
+                  {/* <button class="btn-btn-danger"><i class="fas fa-hand-holding-usd"></i> Donate</button>  */}
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="causen-ccover">
+                <div class="caus-img">
+                  <img src="assets/images/causes/r10.png" alt="" />
+                </div>
+                <div class="caus-info row no-margin">
+                  <span class="left-info col-6"></span>
+                  <span class="rit-info text-right col-6"></span>
+                </div>
+                <div class="caus-detail">
+                  <h4>Amritsar Rail Accident </h4>
+                  <p>
+                  On 19 October 2018, two Indian Railways passenger trains hit a crowd of people in the eastern outskirts of Amritsar, Punjab, killing at least 59 people and inuring approximately 100 more. The crowd had gathered to watch celebrations for the Hindu festival of Dussehra and were standing on the tracks.At least 59 people were killed. By the evening of 19 October, 50 bodies had been discovered and at least 50 others had been admitted to a nearby hospital while an additional nine bodies were found the next day. Due to the force of the train's impact, many victims were dismembered or mutilated beyond recognition, which delayed body identification.
+                  </p>
+                </div>
+
+                <div class="donat-btn">
+                  {/* <!-- <button class="btn-btn-danger"><i class="fas fa-hand-holding-usd"></i> Donate</button> --> */}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* end */}
         </div>
       </section>
 
@@ -410,6 +474,57 @@ function HomePage() {
                     aims to improve conditions for marginalized communities. It
                     provides relief to daily wage workers, aids COVID-affected
                     families, and conducts disaster management across India{" "}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="serv-cove shadow-md rounded bg-white p-3">
+                <div class="prf row mb-3">
+                  <div class="col-3"></div>
+                  <div class="col-9 align-self-center">
+                    <h6 class="mb-0 fw-bolder">Sphere India</h6>
+                    <span>Phone: +91-120-4106184</span>
+                  </div>
+                </div>
+                <div class="det text-center">
+                  <p class="fs-7 fst-italic">
+                  A coalition of humanitarian, development, and resilience actors, comprises 155 full members, including UN agencies, NGOs, academic institutions, and community volunteers. It fosters coordination, capacity building, and advocacy for accountability.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="serv-cove shadow-md rounded bg-white p-3">
+                <div class="prf row mb-3">
+                  <div class="col-3"></div>
+                  <div class="col-9 align-self-center">
+                    <h6 class="mb-0 fw-bolder">Mukul Madhav Foundation</h6>
+                    <span>Phone: 020-25528075</span>
+                  </div>
+                </div>
+                <div class="det text-center">
+                  <p class="fs-7 fst-italic">
+                  Natural disasters entail numerous hardships, including financial struggles, hunger, and disease, wiping out years of community progress. Mukul Madhav Foundation responds swiftly, collaborating with local organizations and mobilizing resources for immediate relief efforts.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="serv-cove shadow-md rounded bg-white p-3">
+                <div class="prf row mb-3">
+                  <div class="col-3"></div>
+                  <div class="col-9 align-self-center">
+                    <h6 class="mb-0 fw-bolder">Help Age India</h6>
+                    <span>Phone: 011-41688955/56</span>
+                  </div>
+                </div>
+                <div class="det text-center">
+                  <p class="fs-7 fst-italic">
+                  In disasters, the elderly often suffer most, prompting HelpAge India to pioneer disaster interventions since 1980. Their model offers swift relief and long-term rehabilitation, evident in projects like Tamaraikulam Elders Village.
                   </p>
                 </div>
               </div>
