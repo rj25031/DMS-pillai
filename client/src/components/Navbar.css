@@ -1,0 +1,464 @@
+ /* .button2 {
+    display: inline-block;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    color: #090909;
+    padding: 0.7em 1.7em;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 0.5em;
+    background: #009087;
+    border: 1px solid #e8e8e8;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+    
+  }
+  
+  .button2:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+  }
+  
+  .button2:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+    color: #090909;
+  }
+  
+  .button2:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #009087;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+  }
+  
+  .button2:hover {
+    color: #ffffff;
+    border: 1px solid #009087;
+  }
+  
+  .button2:hover:before {
+    top: -35%;
+    background-color: #009087;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+    color: #090909;
+  }
+  
+  .button2:hover:after {
+    top: -45%;
+    background-color: #01635c;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  } */
+  
+
+  /* Navbar.css */
+/* .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+background-color: lightgray;
+    padding: 15px;
+    color: #fff;
+  }
+  
+  .logo {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .mobile-menu-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      background-color: lightgray;
+    }
+  
+    .nav-links.mobile-menu-open {
+      display: flex;
+    }
+  
+    .mobile-menu-icon {
+      display: block;
+    }
+  }
+
+ a:hover {
+    color: darkblue;
+    transition: 0.5s;
+ }
+
+ span {
+    color: black;
+ }
+
+
+.about-box {
+    max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  
+}
+
+.head {
+    color: skyblue;
+    text-align: center;
+}
+
+.para {
+    color: aqua;
+    line-height: 1.6;
+}
+
+.pic {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px; 
+  width: 300px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.domain {
+    color: whitesmoke;
+} */
+
+
+/* dropdown css */
+
+/* .paste-button {
+    position: relative;
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .button {
+    background-color: #009087;
+    color: white;
+    padding: 10px 15px;
+    font-size: 17px;
+    font-weight: bold;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    font-size: 13px;
+    position: absolute;
+    z-index: 1;
+    min-width: 200px;
+    background-color: #e8e8e8;
+    border: 2px solid #4CAF50;
+    border-radius: 0px 15px 15px 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  .dropdown-content a {
+    color: #4CAF50;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+    transition: 0.1s;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #009087;
+    color: white;
+  }
+  
+  .dropdown-content a:focus {
+    background-color: #212121;
+    color: #4CAF50;
+  }
+  
+  .dropdown-content #top:hover {
+    border-radius: 0px 13px 0px 0px;
+  }
+  
+  .dropdown-content #bottom:hover {
+    border-radius: 0px 0px 13px 13px;
+  }
+  
+  .paste-button:hover button {
+    border-radius: 15px 15px 0px 0px;
+  }
+  
+  .paste-button:hover .dropdown-content {
+    display: block;
+  }
+     */
+
+
+
+
+     .button2 {
+        display: inline-block;
+        transition: all 0.2s ease-in;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        color: #090909;
+        padding: 0.7em 1.7em;
+        cursor: pointer;
+        font-size: 1rem; /* Responsive font size */
+        border-radius: 0.5em;
+        background: #009087;
+        border: 1px solid #e8e8e8;
+        box-shadow: 4px 4px 8px #c5c5c5, -4px -4px 8px #ffffff; /* Reduced shadow for smaller screens */
+    }
+    
+    .button2:active {
+        color: #666;
+        box-shadow: inset 2px 2px 8px #c5c5c5, inset -2px -2px 8px #ffffff; /* Reduced shadow for smaller screens */
+    }
+    
+    .button2:before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) scaleY(1) scaleX(1.25);
+        top: 100%;
+        width: 140%;
+        height: 180%;
+        background-color: rgba(0, 0, 0, 0.05);
+        border-radius: 50%;
+        display: block;
+        transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+        z-index: -1;
+        color: #090909;
+    }
+    
+    .button2:after {
+        content: "";
+        position: absolute;
+        left: 55%;
+        transform: translateX(-50%) scaleY(1) scaleX(1.45);
+        top: 180%;
+        width: 160%;
+        height: 190%;
+        background-color: #009087;
+        border-radius: 50%;
+        display: block;
+        transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+        z-index: -1;
+    }
+    
+    .button2:hover {
+        color: #ffffff;
+        border: 1px solid #009087;
+    }
+    
+    .button2:hover:before {
+        top: -35%;
+        background-color: #009087;
+        transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+        color: #090909;
+    }
+    
+    .button2:hover:after {
+        top: -45%;
+        background-color: #01635c;
+        transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+    }
+    
+    /* Navbar.css */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: lightgray;
+        padding: 1rem; /* Responsive padding */
+        color: #fff;
+        height: 100px;
+    }
+    
+    .logo {
+        font-size: 2.5rem; /* Responsive font size */
+        font-weight: bold;
+    }
+    
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 1rem; /* Responsive gap */
+    }
+    
+    .nav-links a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+    }
+    
+    .mobile-menu-icon {
+        font-size: 1.2rem; /* Responsive font size */
+        cursor: pointer;
+        display: none;
+    }
+    
+    @media (max-width: 768px) {
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 70px;
+            left: 0;
+            width: 100%;
+            background-color: lightgray;
+            gap: 0; /* Adjust gap for smaller screens */
+        }
+    
+        .nav-links.mobile-menu-open {
+            display: flex;
+        }
+    
+        .mobile-menu-icon {
+            display: block;
+        }
+    }
+    
+    a:hover {
+        color: darkblue;
+        transition: 0.5s;
+    }
+    
+    span {
+        color: black;
+    }
+    
+    .about-box {
+        max-width: 90%; /* Responsive max-width */
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .head {
+        color: skyblue;
+        text-align: center;
+    }
+    
+    .para {
+        color: aqua;
+        line-height: 1.6;
+    }
+    
+    .pic {
+        max-width: 100%;
+        height: auto; /* Change height to auto */
+        max-height: 400px; /* Add max-height to limit height */
+        width: 90%; /* Responsive width */
+        border-radius: 8px;
+        margin-top: 20px;
+    }
+    
+    .domain {
+        color: whitesmoke;
+    }
+    
+    /* dropdown css */
+    
+    .paste-button {
+        position: relative;
+        display: block;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .button {
+        background-color: #009087;
+        color: white;
+        padding: 8px 12px; /* Adjusted padding for smaller screens */
+        font-size: 1rem; /* Responsive font size */
+        font-weight: bold;
+        border: 2px solid transparent;
+        border-radius: 12px;
+        cursor: pointer;
+    }
+    
+    .dropdown-content {
+        display: none;
+        font-size: 0.9rem; /* Responsive font size */
+        position: absolute;
+        z-index: 1;
+        min-width: 200px;
+        background-color: #e8e8e8;
+        border: 2px solid #4CAF50;
+        border-radius: 0px 15px 15px 15px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+    
+    .dropdown-content a {
+        color: #4CAF50;
+        padding: 8px 10px;
+        text-decoration: none;
+        display: block;
+        transition: 0.1s;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: #009087;
+        color: white;
+    }
+    
+    .dropdown-content a:focus {
+        background-color: #212121;
+        color: #4CAF50;
+    }
+    
+    .dropdown-content #top:hover {
+        border-radius: 0px 13px 0px 0px;
+    }
+    
+    .dropdown-content #bottom:hover {
+        border-radius: 0px 0px 13px 13px;
+    }
+    
+    .paste-button:hover button {
+        border-radius: 15px 15px 0px 0px;
+    }
+    
+    .paste-button:hover .dropdown-content {
+        display: block;
+    }
+    
