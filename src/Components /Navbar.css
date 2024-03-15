@@ -340,14 +340,7 @@ background-color: lightgray;
     
     @media (max-width: 768px) {
         .nav-links {
-            display: none;
-            flex-direction: column;
-            position: absolute;
-            top: 70px;
-            left: 0;
-            width: 100%;
-            background-color: lightgray;
-            gap: 0; /* Adjust gap for smaller screens */
+        height: 700px;
         }
     
         .nav-links.mobile-menu-open {
@@ -461,4 +454,10 @@ background-color: lightgray;
     .paste-button:hover .dropdown-content {
         display: block;
     }
+
+    a {
+      font-size: 30px;
+      color: black;
+    }
     
+   
