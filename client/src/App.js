@@ -9,6 +9,7 @@ import HomePage from "./user pages/HomePage";
 import AboutPage from "./user pages/AboutPage";
 import LoginForm from "./user pages/auth/login";
 import RegistrationForm from "./user pages/auth/register";
+import News from "./user pages/news";
 function App() {
   return (
     <Router>
@@ -17,6 +18,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/login" element={<LoginForm />} />
         <Route path="/register" element={<RegistrationForm />} />
+        <Route path="/news" element={<News />} />
       </Routes>
     </Router>
   );
