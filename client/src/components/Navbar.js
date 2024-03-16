@@ -20,9 +20,9 @@ const Navbar = () => {
                   <li className="float-none float-md-start p-4 px-4">
                     <NavLink to="/news">News</NavLink>
                   </li>
-                  <li className="float-none float-md-start p-4 px-4">
+                  {/* <li className="float-none float-md-start p-4 px-4">
                     <NavLink to="/">Contact Us</NavLink>
-                  </li>
+                  </li> */}
                   <li className="float-none float-md-start p-4 px-4">
                     <NavLink to="/login">User Login/Signup</NavLink>
                   </li>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink,useNavigate } from "react-router-dom";
 import axios from "axios";
 import Navbar from "../../components/Navbar";
 
@@ -21,7 +21,7 @@ const AgencyRegistration = () => {
     menPowerQuantity: "",
     // Add more fields as necessary
   });
-
+  const navigate = useNavigate();
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevState) => ({
@@ -29,9 +29,10 @@ const AgencyRegistration = () => {
       [name]: value,
     }));
   };
-
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
+    navigate('/');
     const formData = new FormData();
     formData.append("agencyName", formData.agencyName);
     formData.append("agencyType", formData.agencyType);

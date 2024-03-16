@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from 'react-router-dom';
+import { NavLink,useNavigate } from 'react-router-dom';
 import Navbar from "../../components/Navbar.js";
 import "../../css/register.css";
 import axios from "axios";
@@ -11,6 +11,7 @@ const AgencyRegistrationForm = () => {
     password: "",
     accountType: "", 
   });
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -29,12 +30,15 @@ const AgencyRegistrationForm = () => {
     user.append("AccountType", formData.accountType); 
     const userData = await axios.post("/api/user/register", user);
     console.log(userData.data.message);
-    setFormData({
-      name: "",
-      email: "",
-      password: "",
-      accountType: "", 
-    });
+    if(userData.data.success){
+      navigate('/agency-details')
+      setFormData({
+        name: "",
+        email: "",
+        password: "",
+        accountType: "", 
+      });
+    }
   };
 
   return (
