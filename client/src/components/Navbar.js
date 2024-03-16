@@ -18,7 +18,7 @@ const Navbar = () => {
                     <NavLink to="/">Disaster</NavLink>
                   </li> */}
                   <li className="float-none float-md-start p-4 px-4">
-                    <NavLink to="/">News</NavLink>
+                    <NavLink to="/news">News</NavLink>
                   </li>
                   <li className="float-none float-md-start p-4 px-4">
                     <NavLink to="/">Contact Us</NavLink>

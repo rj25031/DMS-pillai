@@ -1,0 +1,44 @@
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    padding: 20px;
+  }
+
+  .card h2 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #333;
+  }
+
+  .card p {
+    color: #666;
+    font-size: 16px;
+  }
+
+  .news-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .cards-container {
+    width: 150vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .card {
+    padding: 20px;
+  }

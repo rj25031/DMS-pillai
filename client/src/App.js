@@ -12,6 +12,7 @@ import RegistrationForm from "./user pages/auth/register";
 import AgencyLoginForm from "./agency pages/auth/login";
 import AgencyRegistrationForm from "./agency pages/auth/register";
 import UserDetails from "./user pages/auth/userDetails";
+import News from "./user pages/news";
 function App() {
   return (
     <Router>
@@ -24,6 +25,7 @@ function App() {
         <Route path="/agency-register" element={<AgencyRegistrationForm/>}/>
         <Route path="/about" element={<AboutPage />} />
         <Route path="/user-details" element={<UserDetails />} />
+        <Route path="/news" element={<News />} />
       </Routes>
     </Router>
   );
