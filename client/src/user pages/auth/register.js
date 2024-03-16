@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink , useNavigate } from "react-router-dom";
 import Navbar from "../../components/Navbar.js";
 import "../../css/register.css";
 import axios from "axios";
@@ -11,6 +12,7 @@ const RegistrationForm = () => {
     password: "",
     gender: "",
   });
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -29,25 +31,35 @@ const RegistrationForm = () => {
     user.append("Lname", formData.lastName);
     user.append("Gender", formData.gender);
     const userData = await axios.post("/api/user/register", user);
-    console.log(userData.data.message);
-    setFormData({
-      firstName: "",
-      lastName: "",
-      email: "",
-      password: "",
-      gender: "",
-    })
+    console.log(userData.data.message); 
+    if(userData.data.success){
+      navigate('/user-details')
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        password: "",
+        gender: "",
+      })
+    }
   };
 
   return (
     <div className="header">
       <Navbar />
+      <div className>
+            <div className="container">
+                    <ul>
+                        <li> <NavLink to="/"><i className="bi bi-chevron-double-right"></i> Back </NavLink></li>
+                    </ul>
+            </div>
+        </div>
       <form
         className="card card-body w-25 pos"
         onSubmit={handleSubmit}
         id="registration-form"
       >
-        <h1 className="text-center card-title">Register Form:</h1>
+        <h1 className="text-center card-title">User SignUp</h1>
 
         <input
           type="text"
@@ -136,6 +148,7 @@ const RegistrationForm = () => {
         >
           SUBMIT
         </button>
+      <NavLink to="/login"> <p> Already have an account? LogIn here !! </p></NavLink>
       </form>
     </div>
   );

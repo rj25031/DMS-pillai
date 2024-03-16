@@ -1,7 +1,7 @@
 import express  from "express";
 import connectDB from './config/db.js';
 import dotenv from "dotenv";
-import setMiddleware from "./middleware/formDataMiddle.js";
+import setMiddleware from "./middleware/configMiddleware.js";
 import cloudinary  from 'cloudinary';
 
 const app = express();
@@ -15,7 +15,10 @@ cloudinary.config({
     api_secret: process.env.CLOUDINARY_API_SECRET
   });
 
+//routes 
+import userRoutes from './route/userRegRoute.js';
 
+app.use('/api/user',userRoutes)
 
 const port = process.env.PORT; 
 

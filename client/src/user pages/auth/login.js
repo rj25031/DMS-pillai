@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import '../../css/login.css';
 import axios from 'axios';
+import Navbar from '../../components/Navbar';
 
 const LoginForm = () => {
   const [formData, setFormData] = useState({
@@ -38,10 +39,18 @@ const LoginForm = () => {
   };
 
   return (
+    <>
+    <Navbar></Navbar>
+    <div className>
+            <div className="container">
+                    <ul>
+                        <li> <NavLink to="/"><i className="bi bi-chevron-double-right"></i> Back </NavLink></li>
+                    </ul>
+            </div>
+        </div>
     <main className="form-signin w-100 m-auto">
       <form onSubmit={handleSubmit}>
-        <img className="mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57" />
-        <h1 className="h3 mb-3 fw-normal">Please sign in</h1>
+        <h1 className="h3 mb-3 fw-normal">User sign in</h1>
 
         <div className="form-floating">
           <input
@@ -52,7 +61,7 @@ const LoginForm = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-          />
+            />
           <label htmlFor="floatingInput">Email address</label>
         </div>
         <div className="form-floating">
@@ -64,7 +73,7 @@ const LoginForm = () => {
             name="password"
             value={formData.password}
             onChange={handleChange}
-          />
+            />
           <label htmlFor="floatingPassword">Password</label>
         </div>
 
@@ -76,7 +85,7 @@ const LoginForm = () => {
             id="flexCheckDefault"
             name="rememberMe"
             onChange={handleChange}
-          />
+            />
           <label className="form-check-label" htmlFor="flexCheckDefault">
             Remember me
           </label>
@@ -85,6 +94,7 @@ const LoginForm = () => {
         <NavLink to="/register"> <p> Don't have an account? Register here !! </p></NavLink>
       </form>
     </main>
+</>
   );
 };
 

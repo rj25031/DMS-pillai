@@ -1,12 +1,12 @@
-import userRegModel from "../models/user.js";
+import userRegModel from "../Model/user.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
 export const userRegister = async (req, res) => {
   try {
-    const { Fname, Lname, Email, Password, Mobile, aadhar_no } = req.fields;
+    const { Fname, Lname, Email, Password, Gender } = req.fields;
 
-    const userCheck = await userRegModel.findOne(Email ? { u_mail: Email } : { u_phone: Mobile });
+    const userCheck = await userRegModel.findOne({ u_mail: Email });
     if (userCheck) {
       console.log("user already logged in");
       return res.status(403).send({
@@ -21,9 +21,8 @@ export const userRegister = async (req, res) => {
         f_u_name: Fname,
         l_u_name: Lname,
         u_mail: Email,
-        u_phone: Mobile,
         u_password: hashedPass,
-        u_adhar: aadhar_no,
+        u_gender : Gender,
     });
 
     return res.status(200).send({
@@ -32,7 +31,7 @@ export const userRegister = async (req, res) => {
     });
   } catch (error) {
     return res.status(500).send({
-      success: true,
+      success: false,
       message: "failed" + error,
     });
   }
@@ -40,8 +39,8 @@ export const userRegister = async (req, res) => {
 
 export const userLogIn = async (req, res) => {  
   try {
-    const { Email, Mobile, Password } = req.fields;
-    const user = await userRegModel.findOne(Email?{ u_mail: Email }:{ u_phone : Mobile });
+    const { Email, Password } = req.fields;
+    const user = await userRegModel.findOne({ u_mail: Email });
 
     if (!user) {
       return res.status(404).send({
@@ -49,17 +48,16 @@ export const userLogIn = async (req, res) => {
         message: "user not found",
       });
     }
-
     const token = await jwt.sign({user}, process.env.secret_key,{expiresIn:'10d'});
      await bcrypt.compare(
       Password,
-      user.password,
+      user.u_password,
       (err, result) => {
         if (err) {
           console.log(err);
           return res.status(401).send({
             success: false,
-            message: "some password hashing error",
+            message: "password did not match",
           });
         }
         if (result) {

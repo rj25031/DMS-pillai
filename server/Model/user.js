@@ -1,18 +1,24 @@
 import mongoose from "mongoose";
 
 const userSchema = mongoose.Schema(
-    {
-        f_u_name : {type : String, required : true}, 
-        l_u_name : {type : String, required : true}, 
-        u_mail : {type : String, required : true}, 
-        u_phone : {type : Number, required : true}, 
-        u_password : {type : String, required : true}, 
-        u_adhar : {type : Number , required : true},
-        // u_response : String,
-    },
-    {
-        collection:'user_register_data'
-    }
-)
+  {
+    f_u_name: String ,
+    l_u_name: String ,
+    u_mail: String, 
+    u_password: String ,
+    u_gender: String ,
+    address: String,
+    city: String,
+    state: String,
+    country: String,
+    phoneNumber: String,
+    emergencyContact: String,
+    skills: String,
+    availability: String,
+  },
+  {
+    collection: "user_register_data",
+  }
+);
 
-export default mongoose.model('user_register_data',userSchema);
+export default mongoose.model("user_register_data", userSchema);

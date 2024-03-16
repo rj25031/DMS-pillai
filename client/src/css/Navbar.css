@@ -461,4 +461,12 @@ background-color: lightgray;
     .paste-button:hover .dropdown-content {
         display: block;
     }
+
+    .heading-logo {
+      text-align: end;
+      padding-left: 10cm;
+      padding-top: 2mm;
+      padding-right: 1cm;
+      
+    }
     

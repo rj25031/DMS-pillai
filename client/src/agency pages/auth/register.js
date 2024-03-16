@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from 'react-router-dom';
 import Navbar from "../../components/Navbar.js";
 import "../../css/register.css";
 import axios from "axios";
@@ -39,6 +40,13 @@ const AgencyRegistrationForm = () => {
   return (
     <div className="header">
       <Navbar />
+      <div className>
+            <div className="container">
+                    <ul>
+                        <li> <NavLink to="/"><i className="bi bi-chevron-double-right"></i> Back </NavLink></li>
+                    </ul>
+            </div>
+        </div>
       <form
         className="card card-body w-25 pos"
         onSubmit={handleSubmit}
@@ -120,6 +128,8 @@ const AgencyRegistrationForm = () => {
         >
           SUBMIT
         </button>
+        <NavLink to="/agency-register"> <p> Already have an account? LogIn here !! </p></NavLink>
+
       </form>
     </div>
   );
