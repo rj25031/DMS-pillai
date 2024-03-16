@@ -2,11 +2,23 @@ import mongoose from "mongoose";
 
 const agencySchema = mongoose.Schema(
     {
-        a_name : {type : String, required : true}, 
-        a_mail : {type : String, required : true}, 
-        a_phone : Number,
-        password : {type : String, required : true}, 
-        a_type : {type : String , required : true}
+        a_name : String,  
+        a_mail : String,  
+        password : String,  
+        agencyName:String,
+        agencyType:String,
+        address:String,
+        city:String,
+        state:String,
+        country:String,
+        phoneNumber:String,
+        website:String,
+        equipment:String,
+        equipmentQuantity:String,
+        vehicles:String,
+        vehicleQuantity:String,
+        menPower:String,
+        menPowerQuantity:String,
     },
     {
         collection:'agency_register_data'

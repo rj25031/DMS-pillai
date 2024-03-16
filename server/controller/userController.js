@@ -82,3 +82,39 @@ export const userLogIn = async (req, res) => {
     });
   }
 };
+
+export const userDetails =async (req,res)=>{
+  try {
+    const { 
+      Address,
+      City,
+      State,
+      Country,
+      PhoneNumber,
+      EmergencyContact,
+      Skills,
+      Availability, } = req.fields;
+
+    
+    const userDB = await userRegModel.create({
+      address : Address,
+      city : City,
+      state : State,
+      country : Country,
+      phoneNumber : PhoneNumber,
+      emergencyContact : EmergencyContact,
+      skills : Skills,
+      availability : Availability,
+    });
+
+    return res.status(200).send({
+      success: true,
+      message: "user uploaded",
+    });
+  } catch (error) {
+    return res.status(500).send({
+      success: false,
+      message: "failed" + error,
+    });
+  }
+}

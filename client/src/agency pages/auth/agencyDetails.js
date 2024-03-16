@@ -1,63 +1,76 @@
-import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
-import axios from 'axios';
-import Navbar from '../../components/Navbar';
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+import axios from "axios";
+import Navbar from "../../components/Navbar";
 
 const AgencyRegistration = () => {
   const [formData, setFormData] = useState({
-    agencyName: '',
-    agencyType: '',
-    address: '',
-    city: '',
-    state: '',
-    country: '',
-    phoneNumber: '',
-    email: '',
-    website: '',
-    equipment: '',
-    equipmentQuantity: '',
-    vehicles: '',
-    vehicleQuantity: '',
-    menPower: '',
-    menPowerQuantity: ''
+    agencyName: "",
+    agencyType: "",
+    address: "",
+    city: "",
+    state: "",
+    country: "",
+    phoneNumber: "",
+    website: "",
+    equipment: "",
+    equipmentQuantity: "",
+    vehicles: "",
+    vehicleQuantity: "",
+    menPower: "",
+    menPowerQuantity: "",
     // Add more fields as necessary
   });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prevState => ({
+    setFormData((prevState) => ({
       ...prevState,
-      [name]: value
+      [name]: value,
     }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // Submit form data to the backend
+    const formData = new FormData();
+    formData.append("agencyName", formData.agencyName);
+    formData.append("agencyType", formData.agencyType);
+    formData.append("address", formData.address);
+    formData.append("city", formData.city);
+    formData.append("state", formData.state);
+    formData.append("country", formData.country);
+    formData.append("phoneNumber", formData.phoneNumber);
+    formData.append("menPower", formData.menPower);
+    formData.append("website", formData.website); 
+    formData.append("equipment", formData.equipment);
+    formData.append("equipmentQuantity", formData.equipmentQuantity);
+    formData.append("vehicles", formData.vehicles);
+    formData.append("vehicleQuantity", formData.vehicleQuantity);
+    formData.append("menPowerQuantity", formData.menPowerQuantity);
     try {
       const response = await axios.post("/api/agency/register", formData);
       console.log(response.data.message);
       // Reset form after successful submission
       setFormData({
-        agencyName: '',
-        agencyType: '',
-        address: '',
-        city: '',
-        state: '',
-        country: '',
-        phoneNumber: '',
-        email: '',
-        website: '',
-        equipment: '',
-        equipmentQuantity: '',
-        vehicles: '',
-        vehicleQuantity: '',
-        menPower: '',
-        menPowerQuantity: ''
+        agencyName: "",
+        agencyType: "",
+        address: "",
+        city: "",
+        state: "",
+        country: "",
+        phoneNumber: "",
+        email: "",
+        website: "",
+        equipment: "",
+        equipmentQuantity: "",
+        vehicles: "",
+        vehicleQuantity: "",
+        menPower: "",
+        menPowerQuantity: "",
         // Reset additional fields as necessary
       });
     } catch (error) {
-      console.error('Registration failed:', error);
+      console.error("Registration failed:", error);
     }
   };
 
@@ -66,7 +79,11 @@ const AgencyRegistration = () => {
       <Navbar />
       <div className="container">
         <ul>
-          <li><NavLink to="/"><i className="bi bi-chevron-double-right"></i> Back</NavLink></li>
+          <li>
+            <NavLink to="/">
+              <i className="bi bi-chevron-double-right"></i> Back
+            </NavLink>
+          </li>
         </ul>
       </div>
       <main className="form-signin w-100 m-auto">
@@ -75,7 +92,9 @@ const AgencyRegistration = () => {
 
           <div className="row g-3">
             <div className="col-md-6">
-              <label htmlFor="agencyName" className="form-label">Agency Name</label>
+              <label htmlFor="agencyName" className="form-label">
+                Agency Name
+              </label>
               <input
                 type="text"
                 className="form-control"
@@ -87,7 +106,9 @@ const AgencyRegistration = () => {
               />
             </div>
             <div className="col-md-6">
-              <label htmlFor="agencyType" className="form-label">Agency Type</label>
+              <label htmlFor="agencyType" className="form-label">
+                Agency Type
+              </label>
               <input
                 type="text"
                 className="form-control"
@@ -102,7 +123,9 @@ const AgencyRegistration = () => {
 
           <div className="row g-3">
             <div className="col-md-12">
-              <label htmlFor="address" className="form-label">Address</label>
+              <label htmlFor="address" className="form-label">
+                Address
+              </label>
               <input
                 type="text"
                 className="form-control"
@@ -117,7 +140,9 @@ const AgencyRegistration = () => {
 
           <div className="row g-3">
             <div className="col-md-4">
-              <label htmlFor="city" className="form-label">City</label>
+              <label htmlFor="city" className="form-label">
+                City
+              </label>
               <input
                 type="text"
                 className="form-control"
@@ -129,7 +154,9 @@ const AgencyRegistration = () => {
               />
             </div>
             <div className="col-md-4">
-              <label htmlFor="state" className="form-label">State</label>
+              <label htmlFor="state" className="form-label">
+                State
+              </label>
               <input
                 type="text"
                 className="form-control"
@@ -141,7 +168,9 @@ const AgencyRegistration = () => {
               />
             </div>
             <div className="col-md-4">
-              <label htmlFor="country" className="form-label">Country</label>
+              <label htmlFor="country" className="form-label">
+                Country
+              </label>
               <input
                 type="text"
                 className="form-control"
@@ -156,7 +185,9 @@ const AgencyRegistration = () => {
 
           <div className="row g-3">
             <div className="col-md-6">
-              <label htmlFor="phoneNumber" className="form-label">Phone Number</label>
+              <label htmlFor="phoneNumber" className="form-label">
+                Phone Number
+              </label>
               <input
                 type="tel"
                 className="form-control"
@@ -168,7 +199,9 @@ const AgencyRegistration = () => {
               />
             </div>
             <div className="col-md-6">
-              <label htmlFor="email" className="form-label">Email</label>
+              <label htmlFor="email" className="form-label">
+                Email
+              </label>
               <input
                 type="email"
                 className="form-control"
@@ -183,7 +216,9 @@ const AgencyRegistration = () => {
 
           <div className="row g-3">
             <div className="col-md-6">
-              <label htmlFor="website" className="form-label">Website</label>
+              <label htmlFor="website" className="form-label">
+                Website
+              </label>
               <input
                 type="text"
                 className="form-control"
@@ -198,7 +233,9 @@ const AgencyRegistration = () => {
           <h2 className="h4 my-3">Resource Details</h2>
           <div className="row g-3">
             <div className="col-md-6">
-              <label htmlFor="equipment" className="form-label">Equipment</label>
+              <label htmlFor="equipment" className="form-label">
+                Equipment
+              </label>
               <input
                 type="text"
                 className="form-control"
@@ -210,7 +247,9 @@ const AgencyRegistration = () => {
               />
             </div>
             <div className="col-md-6">
-              <label htmlFor="equipmentQuantity" className="form-label">Equipment Quantity</label>
+              <label htmlFor="equipmentQuantity" className="form-label">
+                Equipment Quantity
+              </label>
               <input
                 type="number"
                 className="form-control"
@@ -225,7 +264,9 @@ const AgencyRegistration = () => {
 
           <div className="row g-3">
             <div className="col-md-6">
-              <label htmlFor="vehicles" className="form-label">Vehicles</label>
+              <label htmlFor="vehicles" className="form-label">
+                Vehicles
+              </label>
               <input
                 type="text"
                 className="form-control"
@@ -237,7 +278,9 @@ const AgencyRegistration = () => {
               />
             </div>
             <div className="col-md-6">
-              <label htmlFor="vehicleQuantity" className="form-label">Vehicle Quantity</label>
+              <label htmlFor="vehicleQuantity" className="form-label">
+                Vehicle Quantity
+              </label>
               <input
                 type="number"
                 className="form-control"
@@ -252,7 +295,9 @@ const AgencyRegistration = () => {
 
           <div className="row g-3">
             <div className="col-md-6">
-              <label htmlFor="menPower" className="form-label">Men Power</label>
+              <label htmlFor="menPower" className="form-label">
+                Men Power
+              </label>
               <input
                 type="text"
                 className="form-control"
@@ -264,7 +309,9 @@ const AgencyRegistration = () => {
               />
             </div>
             <div className="col-md-6">
-              <label htmlFor="menPowerQuantity" className="form-label">Men Power Quantity</label>
+              <label htmlFor="menPowerQuantity" className="form-label">
+                Men Power Quantity
+              </label>
               <input
                 type="number"
                 className="form-control"
@@ -277,7 +324,9 @@ const AgencyRegistration = () => {
             </div>
           </div>
 
-          <button className="btn btn-primary w-100 py-2" type="submit">Register</button>
+          <button className="btn btn-primary w-100 py-2" type="submit">
+            Register
+          </button>
         </form>
       </main>
     </>

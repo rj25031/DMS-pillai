@@ -83,3 +83,51 @@ export const agencyLogIn = async (req, res) => {
     });
   }
 };
+
+export const agencyDetails =async (req,res)=>{
+  try {
+    const { 
+      agencyName,
+      agencyType,
+      address,
+      city,
+      state,
+      country,
+      phoneNumber,
+      menPower,
+      website,
+      equipment,
+      equipmentQuantity,
+      vehicles,
+      vehicleQuantity,
+      menPowerQuantity, } = req.fields;
+
+    
+    const userDB = await userRegModel.create({
+      agencyName:agencyName,
+      agencyType:agencyType,
+      address:address,
+      city:city,
+      state:state,
+      country:country,
+      phoneNumber:phoneNumber,
+      menPower:menPower,
+      website:website,
+      equipment:equipment,
+      equipmentQuantity:equipmentQuantity,
+      vehicles:vehicles,
+      vehicleQuantity:vehicleQuantity,
+      menPowerQuantity:menPowerQuantity,
+    });
+
+    return res.status(200).send({
+      success: true,
+      message: "user uploaded",
+    });
+  } catch (error) {
+    return res.status(500).send({
+      success: false,
+      message: "failed" + error,
+    });
+  }
+}

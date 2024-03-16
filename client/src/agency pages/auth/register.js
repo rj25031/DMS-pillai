@@ -9,7 +9,7 @@ const AgencyRegistrationForm = () => {
     name: "",
     email: "",
     password: "",
-    accountType: "", // Changed from gender to accountType
+    accountType: "", 
   });
 
   const handleChange = (e) => {
@@ -25,15 +25,15 @@ const AgencyRegistrationForm = () => {
     const user = new FormData();
     user.append("Email", formData.email);
     user.append("Password", formData.password);
-    user.append("Name", formData.name); // Changed from Fname to Name
-    user.append("AccountType", formData.accountType); // Changed from Gender to AccountType
+    user.append("Name", formData.name); 
+    user.append("AccountType", formData.accountType); 
     const userData = await axios.post("/api/user/register", user);
     console.log(userData.data.message);
     setFormData({
       name: "",
       email: "",
       password: "",
-      accountType: "", // Reset accountType field
+      accountType: "", 
     });
   };
 
@@ -56,9 +56,9 @@ const AgencyRegistrationForm = () => {
 
         <input
           type="text"
-          name="name" // Changed from firstName to name
+          name="name" 
           id="fname"
-          placeholder="Name" // Changed from First Name to Name
+          placeholder="Name" 
           className="rounded p-2"
           required
           autoFocus
@@ -95,10 +95,10 @@ const AgencyRegistrationForm = () => {
           <input
             type="radio"
             id="Government"
-            name="accountType" // Changed from gender to accountType
+            name="accountType" 
             className="custom-control-input"
-            value="government" // Changed values from male to government
-            checked={formData.accountType === "government"} // Changed from male to government
+            value="government" 
+            checked={formData.accountType === "government"} 
             onChange={handleChange}
           />
           <label className="custom-control-label" htmlFor="Government">
